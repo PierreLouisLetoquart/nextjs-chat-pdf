@@ -1,0 +1,56 @@
+@import "@radix-ui/colors/sand.css";
+@import "@radix-ui/colors/orange.css";
+@import "@radix-ui/colors/tomato.css";
+@import "@radix-ui/colors/sand-dark.css";
+@import "@radix-ui/colors/orange-dark.css";
+@import "@radix-ui/colors/tomato-dark.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --background: var(--sand-2);
+        --foreground: var(--sand-12);
+
+        --card: var(--sand-1);
+        --card-foreground: var(--sand-12);
+
+        --popover: var(--sand-1);
+        --popover-foreground: var(--sand-12);
+
+        --primary: var(--orange-9);
+        --primary-hover: var(--orange-10);
+        --primary-foreground: var(--orange-1);
+
+        --secondary: var(--sand-9);
+        --secondary-hover: var(--sand-10);
+        --secondary-foreground: var(--sand-1);
+
+        --muted: var(--sand-2);
+        --muted-foreground: var(--sand-11);
+
+        --accent: var(--sand-3);
+        --accent-foreground: var(--sand-12);
+
+        --destructive: var(--tomato-9);
+        --destructive-hover: var(--tomato-10);
+        --destructive-foreground: var(--tomato-1);
+
+        --border: var(--sand-6);
+        --input: var(--sand-7);
+        --ring: var(--orange-8);
+
+        --radius: 0.5rem;
+    }
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+    body {
+        @apply bg-background text-foreground;
+    }
+}
