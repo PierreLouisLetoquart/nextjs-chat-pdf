@@ -1,38 +1,34 @@
-# Next.js + Shadcn-ui + Radix Colors
+# Chat with your PDFs
 
-This template is a naked Next.js project with Shadcn-ui and Radix Colors. _Naked_ means that it has no default code or styles, just the basic configuration to get you started.
+![Chat with your PDFs](./assets/as.png)
 
-## Getting Started
+This project aims to showcase hox to use the LangChain protocol to chat with your documents.
 
-To create a new project using this template, run the following command:
+In that specific case, their is a "preprocessing" step that is done to convert the PDF into a text file. This is done using the `pdf-parse` pkg.
+
+> Keep in mind that this is a very basic example and that the preprocessing step could be done in a more efficient way.
+> ONLY BASIC PDFs GIVES GOOD RESULTS
+
+## How to use
+
+1. Clone the repo
 
 ```bash
-bun create https://github.com/PierreLouisLetoquart/nextjs-shadcn-radixcol <PROJECT_NAME>
+git clone
 ```
 
-Then, navigate to the project directory and add the dev command:
+2. Install the dependencies
 
 ```bash
-cd <PROJECT_NAME>
-nvim package.json
+bun install
 ```
 
-Add the following script to the `scripts` object:
-
-```json
-"dev": "next dev --turbo"
-```
-
-_`--turbo` is optionnal, it enables the turbo mode._
-
-Finally, run the dev command:
+3. Run the server
 
 ```bash
 bun run dev
 ```
 
-## Resources
+4. Open your browser and go to `http://localhost:3000`
 
-- [**Next.js** Documentation](https://nextjs.org/docs)
-- [**Shadcn-ui** Documentation](https://ui.shadcn.com/docs)
-- [**Radix Colors** Documentation](https://www.radix-ui.com/colors)
+5. Upload a PDF and start chatting with it
